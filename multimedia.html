@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Bloom</title>
+</head>
+<body>
+
+    <div id="container">
+    <div id="headerArea">
+        <div id="header">
+            <h1>Midnight Bloom</h1>
+        </div>   
+    </div>
+
+    <marquee behavior="scroll" direction="left" scrollamount="5">!Advertencia¡ Se a detectado que el usuario que esta leyendo esto, tiene exceso de facha!!!</marquee>
+
+    <div id="flex">
+                
+        <main>
+            <h3>Advertencia</h3>
+            <p>Está sección se encuentra actualmente en desarrollo...</p>
+            <p>Disculpe las molestias!!!</p>
+        </main>
+                
+        <aside id="rightSidebar">
+
+            <h2>Navegación</h2>
+            <ul>
+            <li><a href="index.html">[ Inicio ]</a></li>
+            <br>
+            <li><a href="webmaster.html">[ Webmaster ]</a></li>
+            <br>
+            <li><a href="shrines.html">[ Shrines ]</a></li>
+            <br>
+            <li><a href="multimedia.html">[ Multimedia ]</a></li>
+            <br>
+            <li><a href="links.html">[ Links ]</a></li>
+            </ul>
+
+        </aside>
+
+    </div>
+
+    <footer id="footer">© 2026 Creado por DeathMask</footer>
+
+</body>
+<style>
+    /* Estilos Generales - Estética Emo / Scene / MySpace 2007 */
+    body {
+        background-image: url('azulejos/masterball.png'); /* Tu archivo local */
+        background-repeat: repeat;                     
+        background-color: #000000;                     /* Negro absoluto */
+        
+        /* 🚀 Animación del fondo optimizada para que no salte */
+        animation: moverFondo 20s linear infinite; 
+        background-attachment: fixed;                  /* Fija el fondo al scroll para potenciar el efecto parallax */
+        
+        color: #ffffff;                               /* Texto blanco para que resalte */
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; /* Muy de la época */
+        margin: 0;
+        padding: 20px;
+
+        /* CURSOR PERSONALIZADO */
+        cursor: url('cursores/cursor_normal.cur'), auto;
+    }
+
+    /* 🛠️ CORRECCIÓN DE SINTAXIS: Los selectores anidados van fuera del body en CSS estándar */
+    a, button {
+        cursor: url('cursores/cursor_select.cur'), pointer;
+    } 
+
+    /* Contenedor Principal (Layout clásico de perfil de MySpace) */
+    #container {
+        max-width: 850px;
+        margin: 0 auto;
+        border: 3px double #ff007f;                   /* Borde doble rosa neón */
+        background-color: rgba(10, 10, 10, 0.93);     /* Fondo negro profundo */
+        padding: 15px;
+        box-shadow: 0 0 20px #ff007f;                 /* Resplandor rosa alrededor de la página */
+    }
+
+    /* Encabezado */
+    #headerArea {
+        text-align: center;
+        border-bottom: 2px dashed #333333;            /* Línea punteada gris oscura */
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    #header h1 {
+        color: #ff007f;                               /* Rosa neón principal */
+        font-family: 'Impact', sans-serif;
+        margin: 0;
+        font-size: 3em;
+        text-transform: lowercase;                    /* Todo en minúsculas, muy de nick de Fotolog */
+        text-shadow: 2px 2px #000000, -2px -2px #00ffff; /* Sombra cyan/negra estilo glitch sutil */
+        letter-spacing: -1px;                         /* Letras apretadas */
+    }
+
+    /* Marquee / Frase melancólica o canción en movimiento */
+    marquee {
+        background-color: #ff007f;                    /* Fondo rosa */
+        color: #000000;                               /* Texto negro */
+        padding: 4px;
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    /* Estructura Flexbox (Contenido + Sidebar de Amigos/Intereses) */
+    #flex {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Sección Principal (Izquierda) */
+    main {
+        flex: 2.5; 
+        background-color: #111111;                    /* Gris oscuro */
+        padding: 15px;
+        border: 1px solid #ff007f;                    
+    }
+
+    main h3 {
+        color: #00ffff;                               /* Cyan/Turquesa neón para cortar el rosa */
+        margin-top: 0;
+        font-size: 1.3em;
+        border-bottom: 1px dashed #00ffff;
+        padding-bottom: 3px;
+    }
+
+    hr {
+        border: 0;
+        border-top: 2px dotted #ff007f;
+        margin: 15px 0;
+    }
+
+    /* Barra Lateral (Derecha) */
+    #rightSidebar {
+        flex: 1; 
+        background-color: #111111;
+        padding: 15px;
+        border: 1px solid #333333;
+        min-width: 200px;
+    }
+
+    #rightSidebar h2 {
+        font-size: 1.1em;
+        background-color: #ff007f;                    /* Fondo rosa para los títulos de la barra */
+        color: #000000;
+        padding: 4px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /* Enlaces y Navegación (Típicos "Blends" o links de MySpace) */
+    #rightSidebar ul {
+        list-style-type: "x ";                        /* Viñeta de 'x' trágica */
+        padding-left: 15px;
+        margin-bottom: 20px;
+        color: #ff007f;
+    }
+
+    a {
+        color: #00ffff;                               /* Links en turquesa */
+        text-decoration: none; 
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #ff007f;                               /* Cambia a rosa al pasar el mouse */
+        text-decoration: underline line-through;       /* Subrayado y tachado a la vez, ultra 2007 */
+        text-shadow: 0 0 5px #ff007f;
+    }
+
+    /* Caja de "Mood" / Estado o Top Friends */
+    .box {
+        background-color: #000000;
+        border: 1px solid #ff007f; 
+        padding: 10px;
+        font-size: 0.9em;
+        color: #cccccc;
+        border-left: 5px solid #ff007f;
+    }
+
+    /* Pie de página */
+    #footer {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px dashed #333333;
+        color: #555555;
+        font-size: 0.8em;
+    }
+
+    /* Adaptación para pantallas chicas / celulares */
+    @media (max-width: 600px) {
+        #flex {
+            flex-direction: column; 
+        }
+    }
+
+    /* 🛠️ CÓMO MODIFICAR SIN QUE SE ROMPA:
+       Cambia el '100px' por el ancho y alto real en píxeles de tu imagen bggif.gif.
+       Por ejemplo, si tu imagen mide 50px de ancho por 50px de alto, pon '50px 50px'. 
+       Esto garantiza un bucle matemáticamente perfecto. */
+    @keyframes moverFondo {
+        from {
+            background-position: 0px 0px;
+        }
+        to {
+            background-position: 118px 145px; 
+        }
+    }
+</style>
+
+</html>
